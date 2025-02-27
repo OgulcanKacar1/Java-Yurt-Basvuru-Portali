@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #001f3f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Ogrenci.OgrenciHomeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="272.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="344.0" minWidth="10.0" prefWidth="328.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="253.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="127.0" text="YURT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="194.0" text="PORTALI" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" startX="-100.0" stroke="#ffa726" strokeWidth="3.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="192.0" text="ÖĞRENCİ" textFill="#ff7a00">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="179.0" text="PANELİ" textFill="#ff7a00">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAnaSayfa" styleClass="btnAnaSayfa" mnemonicParsing="false" onAction="#goAnaSayfa" prefHeight="50.0" prefWidth="146.0"  text="ANASAYFA" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCikisYap" styleClass="btnCikisYap" mnemonicParsing="false" onAction="#cikisYap" prefHeight="50.0" prefWidth="146.0" text="ÇIKIŞ YAP" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="30.0" top="30.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="333.0" spacing="10.0" GridPane.columnIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="304.0">
+               <children>
+                  <Label fx:id="txtHosgeldin" alignment="CENTER" prefHeight="89.0" prefWidth="277.0" style="-fx-background-color: #023f8f; -fx-background-radius: 10px;" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="101.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnYurtBilgilerim" styleClass="btnNavigator" mnemonicParsing="false" onAction="#goYurtBilgilerim" prefHeight="60.0" prefWidth="130.0" style="-fx-background-radius: 8; -fx-background-color: #ffa726; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-border-radius: 8; -fx-border-width: 2; -fx-background-insets: 1;" text="Yurt Bilgilerim">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnSifreDegistir" styleClass="btnNavigator" layoutX="22.0" layoutY="31.0" mnemonicParsing="false" onAction="#goSifreDegistir" prefHeight="60.0" prefWidth="130.0" style="-fx-background-radius: 8; -fx-background-color: #ffa726; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-border-radius: 8; -fx-border-width: 2; -fx-background-insets: 1;" text="Şifre Değiştir">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="101.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btnBasvuruYap"  styleClass="btnNavigator" mnemonicParsing="false" onAction="#goBasvuruYap" prefHeight="60.0" prefWidth="130.0" style="-fx-background-radius: 8; -fx-background-color: #ffa726; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-border-radius: 8; -fx-border-width: 2; -fx-background-insets: 1;" text="Başvuru Yap" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnBasvurularim"  styleClass="btnNavigator" layoutX="22.0" layoutY="31.0" mnemonicParsing="false" onAction="#goBasvurularim" prefHeight="60.0" prefWidth="130.0" style="-fx-background-radius: 8; -fx-background-color: #ffa726; -fx-text-fill: white; -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0, 4); -fx-border-radius: 8; -fx-border-width: 2; -fx-background-insets: 1;" text="Başvurularım" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="50.0" left="20.0" right="20.0" top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</GridPane>

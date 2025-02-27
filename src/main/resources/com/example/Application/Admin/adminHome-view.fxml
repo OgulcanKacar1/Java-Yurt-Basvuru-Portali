@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #001f3f;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.Admin.AdminHomeController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="303.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="0.0" prefWidth="7.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0" minWidth="10.0" prefWidth="490.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="11.0" GridPane.columnIndex="1">
+         <children>
+            <Line endX="51.085784912109375" endY="-187.75241088867188" startX="51.0" startY="310.29290771484375" stroke="WHITE" strokeWidth="2.0" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="127.0" text="YURT" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="194.0" text="PORTALI" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" startX="-100.0" stroke="#ff790c" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="163.0" text="ADMİN" textFill="#ff7a00">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="179.0" text="PANELİ" textFill="#ff7a00">
+               <font>
+                  <Font name="Arial Bold" size="40.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnCikisYap" styleClass="btnCikisYap" mnemonicParsing="false" onAction="#cikisYap" prefHeight="50.0" prefWidth="146.0"  text="ÇIKIŞ YAP" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnAnaSayfa" styleClass="btnAnaSayfa" mnemonicParsing="false" onAction="#goAnaSayfa" prefHeight="50.0" prefWidth="146.0"  text="ANASAYFA" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" GridPane.columnIndex="2">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="İŞLEM TÜRÜ SEÇİN" textAlignment="CENTER" textFill="#023f8f">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnOgrenciIslemi" alignment="CENTER" mnemonicParsing="false" onAction="#ogrenciIslemiSayfasi" prefHeight="60.0" prefWidth="186.0" style="-fx-background-color: #ff7a00; -fx-background-radius: 30; -fx-alignment: center;" text="Öğrenci" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnYetkiliIslemi" alignment="CENTER" mnemonicParsing="false" onAction="#yetkiliIslemiSayfasi" prefHeight="60.0" prefWidth="186.0" style="-fx-background-color: #ff7a00; -fx-background-radius: 30; -fx-alignment: center;" text="Yurt Yetkilisi" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnOdaIslemi" alignment="CENTER" mnemonicParsing="false" onAction="#odaIslemiSayfasi" prefHeight="60.0" prefWidth="186.0" style="-fx-background-color: #ff7a00; -fx-background-radius: 30; -fx-alignment: center;" text="Oda" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
