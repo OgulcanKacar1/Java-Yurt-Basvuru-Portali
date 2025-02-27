@@ -39,5 +39,5 @@ Bu proje, İşık Üniversitesi yurt başvuru sürecini düzenlemek ve yurt yetk
 ## Geliştirici Bilgileri
 - **Oğulcan Kacar**  
   - [GitHub](https://github.com/OgulcanKacar1)  
-  - [LinkedIn](https://www.linkedin.com/in/ogulcan-kacar/)
+  - [LinkedIn]([https://www.linkedin.com/in/ogulcan-kacar/](https://www.linkedin.com/in/o%C4%9Fulcan-kacar-768ba0202/))
 
