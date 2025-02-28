@@ -1,4 +1,4 @@
-##Yurt-Basvuru-Portali
+## Yurt-Basvuru-Portali
 
 Bu proje, İşık Üniversitesi yurt başvuru sürecini düzenlemek ve yurt yetkililerinin oda atamalarını daha etkin bir şekilde yönetmesini sağlamak için geliştirilmiştir. Sistem, JavaFX kullanarak masaüstü bir uygulama olarak tasarlanmıştır ve veritabanı entegrasyonu için MSSQL kullanılmaktadır.
 
